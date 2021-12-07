@@ -1,0 +1,301 @@
+/*------------------------------------*  #MenuSites
+  \*------------------------------------*/
+/* line 37, resources/sass/header.scss */
+
+.MenuMobile {
+    /* Box-model */
+    padding-right: 400px;
+    /* Visual */
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  
+/* line 45, resources/sass/header.scss */
+.MenuMobile div > ul.menu {
+  max-height: fit-content !important;
+}
+
+/* line 49, resources/sass/header.scss */
+.MenuMobile div > ul .menu-item {
+  /* Positioning */
+  position: relative;
+  display: inline-block;
+  /* Typography */
+  line-height: 26px;
+}
+
+/* line 59, resources/sass/header.scss */
+.MenuMobile .menu-item a {
+  /* Box-model */
+  display: inline-block;
+  height: 12px;
+  padding: 0 12px;
+  /* Typography */
+  line-height: 12px !important;
+  text-transform: uppercase;
+  font: 1.1em "OpenSans-Regular", Helvetica, Arial, sans-serif !important;
+  color: #fff;
+  /* Visual */
+  border-right: 1px solid #fff;
+}
+
+/* line 75, resources/sass/header.scss */
+.MenuMobile .menu-item a:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 82, resources/sass/header.scss */
+.MenuMobile .menu-item.menu-item-has-children a {
+  border-right: 0;
+}
+
+/* line 87, resources/sass/header.scss */
+.MenuMobile .menu-item.menu-item-has-children > a {
+  padding-right: 25px;
+  background: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/images/drop-menu.png") center right 5px no-repeat;
+}
+
+/* line 92, resources/sass/header.scss */
+.MenuMobile .menu-item-has-children ul {
+  visibility: hidden;
+}
+
+/* line 96, resources/sass/header.scss */
+.MenuMobile .menu-item-has-children .sub-menu {
+  min-width: 180px;
+  position: absolute;
+  z-index: 9;
+}
+
+/* line 102, resources/sass/header.scss */
+.MenuMobile .menu-item-has-children .sub-menu a {
+  padding: 6px 12px;
+  font-size: 11px;
+  min-height: 26px;
+  display: block;
+  white-space: pre-line;
+  height: initial;
+}
+
+/* line 111, resources/sass/header.scss */
+.MenuMobile .menu-item-has-children ul > li {
+  display: block;
+  background-color: #04582d;
+  padding: 0 10px;
+  line-height: 10px;
+}
+
+/* line 118, resources/sass/header.scss */
+.MenuMobile .menu-item-has-children:hover ul {
+  visibility: visible;
+}
+
+/* line 122, resources/sass/header.scss */
+.MenuMobile div > ul .sub-menu .menu-item {
+  display: block;
+  min-height: 26px;
+}
+
+/*------------------------------------*  #MenuSites -- MOBILE
+  \*------------------------------------*/
+
+    /* line 933, resources/sass/header.scss */
+.SinglePage .MenuMobile, .site-filho, .MenuMobile {
+    padding-right: 0;
+  }
+  
+  /* line 945, resources/sass/header.scss */
+  .SinglePage .MenuMobile > div, .site-filho > div, .MenuMobile > div {
+    margin-bottom: 0;
+  }
+  
+  /* line 949, resources/sass/header.scss */
+  .SinglePage .MenuMobile .MenuAcesso, .site-filho .MenuAcesso, .MenuMobile .MenuAcesso {
+    padding-right: 40px;
+    text-align: right;
+  }
+  
+  /* line 962, resources/sass/header.scss */
+  .SinglePage .MenuMobile .MenuAcesso ul li a, .site-filho .MenuAcesso ul li a, .MenuMobile .MenuAcesso ul li a {
+    padding: 0 7px;
+    font-size: 0.85em;
+  }
+  
+  /* line 967, resources/sass/header.scss */
+  .SinglePage .MenuMobile .MenuAcesso .menu-item:last-child a, .site-filho .MenuAcesso .menu-item:last-child a, .MenuMobile .MenuAcesso .menu-item:last-child a {
+    padding-right: 0;
+    border-right: 0;
+  }
+  .MenuPages .sub-menu,
+.single-post .MenuPages .sub-menu {
+  /* Positioning */
+  position: absolute;
+  display: inline-block;
+  top: 52px;
+  left: 0;
+  /* Box-model */
+  width: 100%;
+  /* Visual */
+  background-color: #fc6836;
+  /* Visibility */
+  visibility: hidden;
+}
+.MenuPages .sub-menu li:hover a,
+  .single-post .MenuPages .sub-menu li:hover a {
+    color: #fff;
+    text-decoration: underline;
+  }
+    /* line 723, resources/sass/header.scss */
+    .MenuPages .menu > .menu-item.-ativo > .sub-menu,
+    .single-post .MenuPages .menu > .menu-item.-ativo > .sub-menu {
+      visibility: visible;
+    }
+  
+  /* line 1220, resources/sass/header.scss */
+  .MenuMobile .menu-item a {
+    padding: 0 12px 0 10px;
+  }
+  
+  /* line 1224, resources/sass/header.scss */
+  .MenuMobile li.menu-item:first-child a {
+    padding-left: 10px;
+    padding-right: 13px;
+  }
+  @media (min-width: 1025px) {
+    .MenuMobile{
+        display: none;
+    }
+    /* line 128, resources/sass/header.scss */
+    .MenuMobile .menu-item-has-children ul > li:hover {
+      background-color: #044f29;
+    }
+    
+    /* line 933, resources/sass/header.scss */
+  .SinglePage .MenuMobile, .site-filho, .MenuMobile {
+    height: 26px;
+  }
+  /* line 1050, resources/sass/header.scss */
+  .-fixed-menu.home .MenuMobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 1054, resources/sass/header.scss */
+  .-fixed-menu .MenuMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 1180px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+    
+/* line 143, resources/sass/header.scss */
+.MenuMobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width: 100vw;
+    max-width: 460px;
+    z-index: 10;
+    padding: 60px 0 30px 60px;
+    background-color: #fff;
+    }
+    /* line 155, resources/sass/header.scss */
+    .MenuMobile div > ul.menu {
+    max-height: none;
+    }
+    /* line 159, resources/sass/header.scss */
+    .MenuMobile .brasao {
+    display: none !important;
+    }
+    /* line 163, resources/sass/header.scss */
+    .MenuMobile.-ativo {
+    left: -60px;
+    -webkit-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
+    }
+    /* line 168, resources/sass/header.scss */
+    .admin-bar .MenuMobile .menu-superior-container {
+    padding-top: 46px;
+    }
+    /* line 172, resources/sass/header.scss */
+    .MenuMobile .menu-superior-container {
+    background-color: #fff;
+    }
+    /* line 176, resources/sass/header.scss */
+    .MenuMobile div > ul .menu-item {
+    line-height: 36px;
+    display: block;
+    border-bottom: 1px solid #485156;
+    }
+    /* line 182, resources/sass/header.scss */
+    .MenuMobile .menu {
+    position: relative;
+    z-index: 11;
+    padding: 0 15px;
+    height: calc( 100vh - 130px);
+    overflow: auto;
+    }
+    /* line 190, resources/sass/header.scss */
+    .MenuMobile .menu-item a {
+    color: #000;
+    border-right: 0;
+    }
+    /* line 195, resources/sass/header.scss */
+    .MenuMobile .menu-item-has-children .sub-menu {
+    position: relative;
+    display: none;
+    }
+    /* line 200, resources/sass/header.scss */
+    .MenuMobile .menu-item-has-children.-ativo .sub-menu {
+    display: block;
+    visibility: visible;
+    }
+    /* line 205, resources/sass/header.scss */
+    .MenuMobile .menu-item-has-children ul > li {
+    padding-left: 35px;
+    background-color: #fff;
+    }
+    /* line 210, resources/sass/header.scss */
+    .MenuMobile .menu-item-has-children ul > li:last-child {
+    border: 0;
+    }
+    /* line 214, resources/sass/header.scss */
+    .MenuMobile .menu-item-has-children ul > li:first-child {
+    border-top: 1px solid #485156;
+    }
+    /* line 218, resources/sass/header.scss */
+    .MenuMobile .tl-7 {
+    width: 100%;
+    }
+        /* line 989, resources/sass/header.scss */
+  .MenuMobile {
+    height: 100%;
+  }
+  /* line 993, resources/sass/header.scss */
+  .SinglePage .MenuMobile .MenuAcesso {
+    display: none;
+  }
+  /* line 999, resources/sass/header.scss */
+  .SinglePage .MenuMobile .BuscaMob form {
+    display: inline-block;
+    width: 100%;
+  }
+  /* line 1010, resources/sass/header.scss */
+  .SinglePage .MenuMobile .BuscaMob fieldset {
+    position: relative;
+  }
+  .MenuMobile ul#menu-principal {
+      display: block;
+      margin-left: 0;
+  }
+}  

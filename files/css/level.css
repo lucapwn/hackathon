@@ -1,0 +1,60 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.1rem;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    min-width: 22rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-text {
+    width: 100%;
+    padding: 0.9rem;
+    color: #333;
+}
+
+#h1-title {
+    font-size: 2.4rem;
+}
+
+@media screen and (max-width: 710px) {
+    #h1-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #h1-title {
+        font-size: 2rem;
+    }
+
+    .choice-container {
+        min-width: 20rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #h1-title {
+        font-size: 2rem;
+    }
+
+    .choice-container {
+        min-width: 18rem;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    #h1-title {
+        font-size: 1.8rem;
+    }
+
+    .choice-container {
+        min-width: 16rem;
+    }
+}

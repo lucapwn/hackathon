@@ -1,0 +1,100 @@
+/*
+Theme Name: Governo do Estado do Ceará
+Theme URI: http://ceara.gov.br/
+Author: Cotic - Casa Civil
+Author URI: mailto:informatica@casacivil.ce.gov.br
+Description: Tema padrão do site do Governo do Estado do Ceará adaptado para o contexto multisite.
+Version: 1.0
+*/
+
+main {
+    margin-bottom: -10px;
+}
+
+/* Títulos */
+.cc-bootstrap-wrapper h2.title {
+    font-family: "OpenSans-Regular", Helvetica, Arial, sans-serif;
+}
+
+.cc-bootstrap-wrapper h2.title {
+    font-size: 20px;
+}
+
+/* Cores */
+.cc-bootstrap-wrapper .orange {
+    color: #00a84a;
+}
+
+/* All Posts Module */
+.cc-bootstrap-wrapper.cc-all-posts-module {
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post .cc-post-metas {
+    font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post .cc-post-metas span.cc-post-metas-category {
+    color: #00a84a; 
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post .cc-post-metas span.cc-post-metas-separator {
+    color: #afafaf;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post .cc-post-metas span.cc-post-metas-date {
+    color: #b4b3b2;
+    font-size: 11px;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post a.cc-post-title {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post a.cc-post-title:hover {
+    color: #00a84a;
+    text-decoration: none;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post a.cc-post-title h3::before {
+    height: 100%;
+    max-height: 69px;
+    max-width: 4px;
+    background: #00a84a;
+    color: #00a84a;
+    content: "cc";
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    overflow: hidden;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post a.cc-post-title h3 {
+    font-family: "OpenSans-Semibold", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    min-height: 69px;
+    padding-left: 15px;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module .cc-post div.cc-post-excerpt p {
+    color: #6b6b6b;
+    font-family: "OpenSans-Regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.cc-bootstrap-wrapper.cc-all-posts-module hr.cc-divider {
+    border-bottom: 1px solid #9a9a9a;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.SinglePage em {
+    font-style: italic;
+}

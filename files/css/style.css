@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300&display=swap');
+
+.quiz-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.quiz-title {
+    color: rgb(48, 47, 47);
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.h1-text {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.animated-h1-text {
+    color: #333;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.animated-h1-text::after {
+    content: "|";
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+}
+
+.animated-h2-text {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.emoji-btn {
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    margin: 0;
+    position: relative;
+    transform: translateY(-50%);
+    margin-left: 4px;
+}
+
+.btn {
+    color: white;
+    font-size: 1rem;
+    padding: 0.9rem 0;
+    width: 20rem;                 
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(60deg, #77db73 0%, #00a84a 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    color: rgb(28, 26, 26);
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(119, 219, 115, 0.5);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.btn-jogar {
+    font-size: 1rem;               
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #1E90FF 0%, rgb(48, 131, 255) 100%);
+    border-radius: 4px;
+}
+
+.btn-jogar:hover {
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.4);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.fa-gamepad {
+    color: white;
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+#score-btn {
+    background: linear-gradient(90deg, #ffdb33 0%, #ffbc0a 100%);
+}
+
+#score-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.4);
+}
+
+#finalScore {
+    font-size: 2.4rem;
+    margin-bottom: 14px;
+}
+
+.fa-trophy {
+    color: gold;
+    padding-top: 0.85rem;
+    padding-right: 0.6rem;
+    font-size: 1.8rem;
+}
+
+.score-icon {
+    display: flex;
+}
+
+.fa-crown {
+    font-size: 1.3rem;
+    margin-left: 0.8rem;
+}
+
+/* Done page CSS */
+
+.done-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40rem;                 
+}
+
+.user-input {
+    margin-bottom: 1rem;
+    max-width: 20rem;
+    font-size: 1rem;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(51, 51, 51, 0.28);
+}
+
+input[type="text"] {
+    border: none;
+    line-height: 30px;
+    padding: 1.4rem;
+}
+
+.user-input::placeholder {
+    color: #333;
+}
+
+#menu {
+    background: linear-gradient(90deg, #42a5f5 0%, #2196f3 100%);
+}
+
+#menu:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.3);
+}
+
+#index {
+    background: linear-gradient(90deg, #ffdb33 0%, #ffbc0a 100%);
+}
+
+#index:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 0, 0.4);
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#done-text {
+    font-size: 2.4rem;
+    color: #333;
+}
+
+#saveScoreBtn {
+    padding: 0.9rem 0;
+}
+
+.fa-home {
+    margin-left: 0.9rem;
+    font-size: 1.3rem;
+    color: rgb(28, 26, 26);
+}
+
+@media screen and (max-width: 710px) {
+    #finalScore {
+        font-size: 2.2rem;
+    }
+
+    #done-text {
+        font-size: 2.2rem;
+    }
+
+    .animated-h1-text {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #finalScore {
+        font-size: 2rem;
+    }
+
+    #done-text {
+        font-size: 2rem;
+    }
+
+    .animated-h1-text {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 18rem;
+    }
+
+    .done-form-container {
+        max-width: 18rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #finalScore {
+        font-size: 1.8rem;
+    }
+
+    .animated-h1-text {
+        font-size: 1.8rem;
+    }
+
+    #done-text {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 15rem;
+    }
+
+    .done-form-container {
+        max-width: 15rem;
+    }
+}

@@ -1,0 +1,42 @@
+body {
+    color: #333;
+}
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.fa-trophy {
+    visibility: hidden;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+}
+
+#finalScore {
+    padding-bottom: 10px;
+}
+
+#highScoresList {
+    margin-bottom: 2.5rem;
+}
+
+#highScoresList li:nth-child(1) .fa-trophy {
+    color: gold;
+    visibility: visible;
+}
+
+#highScoresList li:nth-child(2) .fa-trophy {
+    color: silver;
+    visibility: visible;
+}
+
+#highScoresList li:nth-child(3) .fa-trophy {
+    color: #cd7f32;
+    visibility: visible;
+}

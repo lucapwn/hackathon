@@ -1,0 +1,145 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #42a5f5 0%, #2196f3 100%);
+    font-size: 0.8rem;
+    min-width: 40rem;
+    color: #333;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.3);
+    transform: scale(1.02);
+    transform: transform 100ms;
+    color: rgb(28, 26, 26);
+}
+
+.choice-prefix {
+    padding: 1rem 2.2rem;
+    padding-right: 0;
+}
+
+.choice-text {
+    width: 100%;
+    padding: 1rem;
+}
+
+.correct {
+    background: linear-gradient(32deg, #7ae582 0%, #7ae582 100%);
+}
+
+.incorrect {
+    background: linear-gradient(32deg, #e63946 0%, #e63946 100%);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+.turismo-type p {
+    font-size: 1rem;
+    letter-spacing: 0.003;
+}
+
+.h1-text {
+    margin-bottom: 2.4rem;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 2.5rem;
+    border: 2px solid #333;
+    margin-top: 2rem;
+    margin-bottom: 1.8rem;
+    padding: 2px;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: linear-gradient(32deg, #00c750 0%, #15e066 100%);
+    border-radius: 2.5rem;
+    width: 0%;
+}
+
+@media screen and (max-width: 740px) {
+    .choice-container {
+        min-width: 35rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .choice-container {
+        min-width: 30rem;
+    }
+
+    #progressBar {
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .choice-container {
+        min-width: 25rem;
+    }
+
+    #progressBar {
+        width: 16rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .choice-container {
+        min-width: 20rem;
+    }
+
+    #progressBar {
+        width: 12rem;
+    }
+
+    .h1-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .choice-container {
+        min-width: 15rem;
+    }
+
+    #progressBar {
+        width: 10rem;
+    }
+
+    .h1-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .choice-container {
+        min-width: 12rem;
+    }
+
+    #progressBar {
+        width: 8rem;
+    }
+
+    .h1-text {
+        font-size: 1.4rem;
+    }
+}

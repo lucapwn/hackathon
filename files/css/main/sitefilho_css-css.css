@@ -1,0 +1,1122 @@
+/*------------------------------------*  #Quebras
+  \*------------------------------------*/
+/*------------------------------------*  #Cores
+  \*------------------------------------*/
+/*------------------------------------*  #Fontes
+  \*------------------------------------*/
+  @font-face {
+    font-family: 'OpenSans-Italic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Italic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Italic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Light';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Light.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Light.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-LightItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-LightItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-LightItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-LightItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Regular';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Regular.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Regular.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Semibold.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Semibold.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Semibold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-SemiboldItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-SemiboldItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-SemiboldItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-SemiboldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Bold';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Bold.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Bold.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-BoldItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-BoldItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-BoldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBold.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBold.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-ExtraBoldItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBoldItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /*------------------------------------*  #Tamanhos de Fontes
+    \*------------------------------------*/
+  /*------------------------------------*  #Utilidades
+    \*------------------------------------*/
+  /*------------------------------------*  #Mixins
+    \*------------------------------------*/
+  /*------------------------------------*  #Quebras
+    \*------------------------------------*/
+  /*------------------------------------*  #Cores
+    \*------------------------------------*/
+  /*------------------------------------*  #Fontes
+    \*------------------------------------*/
+  @font-face {
+    font-family: 'OpenSans-Italic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Italic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Italic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Light';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Light.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Light.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-LightItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-LightItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-LightItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-LightItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Regular';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Regular.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Regular.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Semibold';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Semibold.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Semibold.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Semibold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-SemiboldItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-SemiboldItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-SemiboldItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-SemiboldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-Bold';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Bold.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Bold.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-BoldItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-BoldItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-BoldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBold.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBold.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans-ExtraBoldItalic';
+    src: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBoldItalic.eot") format("embedded-opentype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/fonts/OpenSans-ExtraBoldItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /*------------------------------------*  #Tamanhos de Fontes
+    \*------------------------------------*/
+  /*------------------------------------*  #Utilidades
+    \*------------------------------------*/
+  /*------------------------------------*  #Mixins
+    \*------------------------------------*/
+  /*------------------------------------*  #HeaderPrincipal -- MOBILE
+    \*------------------------------------*/
+  
+  /* line 38, resources/sass/_header-sitefilho.scss */
+  .SinglePage .IconeSetaC, .site-filho .IconeSetaC {
+    font-size: 11px !important;
+  }
+  
+  /* line 42, resources/sass/_header-sitefilho.scss */
+  .SinglePage .HeaderPrincipal h1 img, .site-filho .HeaderPrincipal h1 img {
+    height: 106px;
+    max-width: 559px;
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+  
+  /* line 49, resources/sass/_header-sitefilho.scss */
+  .SinglePage .logo, .site-filho .logo {
+    margin-top: 6px;
+  }
+  
+  /* line 54, resources/sass/_header-sitefilho.scss */
+  .SinglePage .main-header, .site-filho .main-header {
+    padding-bottom: 0;
+  }
+  
+  /* line 57, resources/sass/_header-sitefilho.scss */
+  .SinglePage .HeaderPrincipal, .site-filho .HeaderPrincipal {
+    margin-left: -25px;
+    margin-right: 20px;
+    margin-top: 14px;
+    margin-bottom: 27px;
+  }
+  
+  /* line 63, resources/sass/_header-sitefilho.scss */
+  .SinglePage .HeaderPrincipal h1, .site-filho .HeaderPrincipal h1 {
+    /* Positioning */
+    margin-bottom: 0;
+  }
+  
+  @-moz-document url-prefix() {
+    /* line 69, resources/sass/_header-sitefilho.scss */
+    .SinglePage .MenuPages, .site-filho .MenuPages {
+      margin-top: 0px;
+      top: -28px;
+    }
+  }
+  
+  /* line 75, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages, .site-filho .MenuPages {
+    border-bottom: 3px solid #00a84a;
+  }
+  
+  /* line 79, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages ul > .menu-item a, .site-filho .MenuPages ul > .menu-item a {
+    padding: 0px 10px;
+  }
+  
+  /* line 83, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .current-menu-item > a, .site-filho .MenuPages .current-menu-item > a {
+    text-decoration: underline;
+  }
+  
+  /* line 87, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .logo, .site-filho .MenuPages .logo {
+    overflow: hidden;
+    margin-top: 2px;
+    margin-left: 8px;
+  }
+  
+  /* line 94, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .logo img, .site-filho .MenuPages .logo img {
+    margin: auto;
+    display: inline-block;
+    height: 61px;
+    margin-bottom: 4px;
+  }
+  
+  /* line 107, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .Busca input, .site-filho .MenuPages .Busca input {
+    float: left;
+  }
+  
+  /* line 113, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .Busca label, .site-filho .MenuPages .Busca label {
+    display: none;
+  }
+  
+  /* line 117, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .Busca fieldset, .site-filho .MenuPages .Busca fieldset {
+    margin: 13px 0;
+  }
+  
+  /* line 121, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .Busca input[type="text"], .site-filho .MenuPages .Busca input[type="text"] {
+    padding: 0 15px;
+    height: 24px;
+    width: calc( 100% - 34px);
+    font-size: 1.4em;
+    line-height: 24px;
+    background-color: #e9e9e9;
+    border: 0;
+  }
+  
+  /* line 137, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .Busca .btn, .site-filho .MenuPages .Busca .btn {
+    height: 24px;
+    width: 30px;
+    padding: 0;
+    text-indent: -9999px;
+    background: url("https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/images/busca-icon.png") center center no-repeat #00a84a;
+    background-size: 28px;
+  }
+  
+  /* line 158, resources/sass/_header-sitefilho.scss */
+  .SinglePage .Calendario, .site-filho .Calendario {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  
+  /* line 162, resources/sass/_header-sitefilho.scss */
+  .SinglePage .Calendario h2, .site-filho .Calendario h2 {
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+    font: 1.6em "OpenSans-ExtraBold", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  /* line 174, resources/sass/_header-sitefilho.scss */
+  .SinglePage .Calendario p, .site-filho .Calendario p {
+    line-height: inherit;
+  }
+  
+  /* line 179, resources/sass/_header-sitefilho.scss */
+  .SinglePage .Calendario h3, .site-filho .Calendario h3 {
+    letter-spacing: 0.01em;
+    font-size: 3.6em;
+  }
+  
+  /* line 183, resources/sass/_header-sitefilho.scss */
+  .SinglePage .Calendario h3 b, .site-filho .Calendario h3 b {
+    font-family: "OpenSans-Semibold", Helvetica, Arial, sans-serif;
+  }
+  
+  /* line 188, resources/sass/_header-sitefilho.scss */
+  .SinglePage .Calendario a, .site-filho .Calendario a {
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: lowercase;
+  }
+  
+  /* line 203, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .logo, .site-filho .MenuPages .logo {
+    margin-top: 6px;
+  }
+  
+  /* line 208, resources/sass/_header-sitefilho.scss */
+  .SinglePage .menu-item-25837 .sub-menu li:first-child {
+    margin-left: -500px;
+  }
+  
+  /* line 211, resources/sass/_header-sitefilho.scss */
+  .SinglePage .menu-item-25843 .sub-menu li:first-child {
+    margin-left: -300px;
+  }
+  
+  /* line 214, resources/sass/_header-sitefilho.scss */
+  .SinglePage .menu-item-25865 .sub-menu li:first-child {
+    margin-left: -104px;
+  }
+  
+  /* line 217, resources/sass/_header-sitefilho.scss */
+  .SinglePage .menu-item-25864 .sub-menu li:first-child {
+    margin-left: 122px;
+  }
+  
+  /* line 221, resources/sass/_header-sitefilho.scss */
+  .SinglePage .menu-item-25882 .sub-menu li:first-child {
+    margin-left: 323px;
+  }
+  
+  /* line 225, resources/sass/_header-sitefilho.scss */
+  .SinglePage .-whitebg .MenuPages {
+    -webkit-box-shadow: 0 !important;
+            box-shadow: 0 !important;
+  }
+  
+  /* line 228, resources/sass/_header-sitefilho.scss */
+  .SinglePage .main-header {
+    padding-bottom: 40px;
+  }
+  
+  /* line 232, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages {
+    border-bottom: 0;
+  }
+  
+  /* line 234, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .sub-menu {
+    top: 73px !important;
+  }
+  
+  /* line 239, resources/sass/_header-sitefilho.scss */
+  .SinglePage .MenuPages .Busca fieldset {
+    margin: 27px 0 0 0;
+  }
+  
+  /* line 248, resources/sass/_header-sitefilho.scss */
+  .single-post.site-filho .MenuPages .logo {
+    margin-top: 6px;
+  }
+  
+  /* line 257, resources/sass/_header-sitefilho.scss */
+  .single-post .MenuPages {
+    -webkit-box-shadow: 0 0px 25px 0px rgba(0, 0, 0, 0.5) !important;
+            box-shadow: 0 0px 25px 0px rgba(0, 0, 0, 0.5) !important;
+    margin-top: -40px !important;
+  }
+  
+  /* line 263, resources/sass/_header-sitefilho.scss */
+  .single-post.-fixed-menu .MenuPages {
+    margin-top: -28px !important;
+  }
+  
+  @-moz-document url-prefix() {
+    /* line 270, resources/sass/_header-sitefilho.scss */
+    .single-post.-fixed-menu .MenuPages {
+      margin-top: 0 !important;
+    }
+    /* line 274, resources/sass/_header-sitefilho.scss */
+    .-fixed-menu .main-header + nav {
+      position: fixed;
+      top: 55px;
+      left: 0;
+      right: 0;
+      z-index: 9;
+    }
+    /* line 282, resources/sass/_header-sitefilho.scss */
+    .SinglePage .main-header {
+      padding-bottom: 30px;
+    }
+    /* line 288, resources/sass/_header-sitefilho.scss */
+    .single-post .MenuPages {
+      margin-top: 0 !important;
+    }
+  }
+  
+  /* line 296, resources/sass/_header-sitefilho.scss */
+  .site-filho .MenuPages > .tl-9.-padfix {
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* line 10, resources/sass/_layout-sitefilho.scss */
+  .site-filho .economia-regiao .lista li > a {
+    color: #fff;
+  }
+  
+  /* line 18, resources/sass/_layout-sitefilho.scss */
+  .site-filho article aside .UmaNoticia .subtitulo.data {
+    margin: 10px 0;
+  }
+  
+  /* line 23, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado {
+    /* Positioning */
+    position: relative;
+    /* Box-model */
+    padding: 0 0 2px 14px;
+    /* Visual */
+    border-left: 4px solid #00a84a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 100%;
+  }
+  
+  /* line 33, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado .categoria {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    left: 15px;
+    /* Typography */
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #00a84a;
+    text-transform: uppercase;
+    font-family: "OpenSans-Semibold", Helvetica, Arial, sans-serif;
+  }
+  
+  /* line 45, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado .categoria + h1,
+  .site-filho .destacado .categoria + h2,
+  .site-filho .destacado .categoria + h3,
+  .site-filho .destacado .categoria + h4,
+  .site-filho .destacado .categoria + a {
+    padding-top: 15px;
+  }
+  
+  /* line 54, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado .categoria + a {
+    display: block;
+  }
+  
+  /* line 58, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado.-temSubTitulo {
+    margin-top: 30px;
+    /*&::before{
+                content:'';
+                width: 4px;
+                height: 69px;
+                background-color: #00a84a;
+            }*/
+  }
+  
+  /* line 67, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado.-temSubTitulo .subtitulo {
+    position: absolute;
+    top: -25px;
+    line-height: 15px;
+  }
+  
+  /* line 74, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado .-bold {
+    font-family: "OpenSans-Semibold", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.001em;
+  }
+  
+  /* line 79, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado > a {
+    font-size: inherit;
+  }
+  
+  /* line 81, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado > a h2 {
+    font-size: 3em;
+  }
+  
+  /* line 85, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado > a h3 {
+    font: 2em "OpenSans-Regular", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.001em;
+  }
+  
+  /* line 93, resources/sass/_layout-sitefilho.scss */
+  .site-filho .HasSidebar {
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+  
+  /* line 98, resources/sass/_layout-sitefilho.scss */
+  .site-filho .texto-institucional .destacado {
+    position: relative;
+    padding: 0 0 2px 8px;
+    background: url(http://www.gabgov.ce.gov.br/wp-content/uploads/sites/2/2017/08/borda-destaque.jpg) no-repeat 0 4px;
+    border: none !important;
+  }
+  
+  /* line 105, resources/sass/_layout-sitefilho.scss */
+  .site-filho .listagem-servidores .grid-servidores .item {
+    display: block;
+    width: calc(20% - 60px);
+    margin: 0 29px;
+    margin-bottom: 20px;
+    float: left;
+  }
+  
+  /* line 112, resources/sass/_layout-sitefilho.scss */
+  .site-filho .listagem-servidores .grid-servidores .item figcaption p {
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    height: 43px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+  }
+  
+  /* line 122, resources/sass/_layout-sitefilho.scss */
+  .site-filho .destacado > .baixar {
+    background: #fff url(https://www.cge.ce.gov.br/wp-content/themes/ceara2017/assets/images/card-informativo/icon-pdf.png) left 10px center no-repeat;
+    padding: 8px 10px 8px 33px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "OpenSans-Regular", Helvetica, Arial, sans-serif;
+    color: #00a84a;
+    margin: 0 0 0 34px;
+    background-size: 15px;
+  }
+  
+  /* line 134, resources/sass/_layout-sitefilho.scss */
+  .site-filho .ListagemManchetes hr {
+    margin: 14px 0;
+  }
+  
+  /* line 137, resources/sass/_layout-sitefilho.scss */
+  .site-filho .ListagemManchetes .Side {
+    padding-top: 27px;
+  }
+  
+  /* line 143, resources/sass/_layout-sitefilho.scss */
+  .site-filho .Informativo ul {
+    list-style: disc;
+    font-family: "OpenSans-Light", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin: 0 0 0 20px;
+  }
+  
+  /* line 151, resources/sass/_layout-sitefilho.scss */
+  .site-filho #destaque1 figcaption {
+    margin-bottom: 15px;
+  }
+  
+  /* line 157, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialBox p {
+    line-height: 1.6em;
+  }
+  
+  /* line 160, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard {
+    /* Positioning */
+    position: relative;
+    margin-bottom: 15px;
+    /* Visual */
+    background-color: #fff;
+    color: #485156;
+    padding: 0;
+  }
+  
+  /* line 169, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard > a {
+    color: #485156 !important;
+  }
+  
+  /* line 173, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .Card {
+    padding: 15px 0 0 15px;
+  }
+  
+  /* line 177, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .Card.Informativo {
+    border-left: none;
+    padding: 15px 15px 0px 0px;
+  }
+  
+  /* line 190, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .lateral {
+    display: table;
+    min-height: 40px;
+  }
+  
+  /* line 193, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .lateral p {
+    display: table-cell;
+    vertical-align: middle;
+    font: 1.5em "OpenSans-Semibold", Helvetica, Arial, sans-serif;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* line 203, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .principal p {
+    font: 1.2em "OpenSans-Light", Helvetica, Arial, sans-serif !important;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* line 209, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .principal a, .site-filho .DiarioOficialCard .principal span {
+    color: #00a84a;
+  }
+  
+  /* line 212, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .principal a b, .site-filho .DiarioOficialCard .principal span b {
+    font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+  }
+  
+  /* line 223, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard:after {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* Box-model */
+    display: block;
+    width: 6px;
+    /* Visual */
+    z-index: 1;
+    background-color: #00a84a;
+    /* Misc */
+    content: '';
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* line 240, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard:hover:after {
+    /* Box-model */
+    width: 100%;
+    /* Misc */
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+  }
+  
+  /* line 247, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard:hover p {
+    /* Typography */
+    color: #fff !important;
+    /* Misc */
+    -webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* line 253, resources/sass/_layout-sitefilho.scss */
+  .site-filho .DiarioOficialCard .principal:hover {
+    border-left: 1px solid #fff !important;
+    z-index: 3;
+    position: relative;
+  }
+  
+  /* line 271, resources/sass/_layout-sitefilho.scss */
+  .site-filho .MenuPages {
+    border-bottom: 3px solid #00a84a;
+  }
+  
+  /* line 274, resources/sass/_layout-sitefilho.scss */
+  .site-filho .MenuPages .sub-menu {
+    top: 52px;
+  }
+  
+  /* line 279, resources/sass/_layout-sitefilho.scss */
+  .site-filho .agenda-secretario {
+    width: 170px;
+    float: right;
+    text-align: right;
+    padding-top: 15px;
+    line-height: 0;
+    font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+  }
+  
+  /* line 287, resources/sass/_layout-sitefilho.scss */
+  .site-filho .agenda-secretario span {
+    color: #00a84a;
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  
+  /* line 292, resources/sass/_layout-sitefilho.scss */
+  .site-filho .agenda-secretario p {
+    font-size: 1.3em;
+  }
+  
+  /* line 301, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos {
+    color: #485156;
+    margin: 30px 0 0 0;
+  }
+  
+  /* line 304, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table {
+    border-collapse: collapse;
+  }
+  
+  /* line 306, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table thead {
+    background-color: #00a84a;
+    color: #fff;
+    font-size: 12px;
+    font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    border: 6px solid #00a84a;
+  }
+  
+  /* line 314, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table thead th {
+    border-left: 1px #f2a990 solid;
+    padding-left: 10px;
+  }
+  
+  /* line 318, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table thead tr {
+    padding-left: 12px;
+  }
+  
+  /* line 323, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table tbody td a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000 !important;
+  }
+  
+  /* line 327, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table tbody td a:hover {
+    color: #00a84a !important;
+  }
+  
+  /* line 331, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table tbody td.laranja {
+    border-left: 6px solid #00a84a;
+    padding: 0 0 0 10px;
+    font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+    line-height: 0;
+  }
+  
+  /* line 339, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table tbody td.laranja span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold", Helvetica, Arial, sans-serif;
+    display: block;
+    margin: 0 0 8px 0;
+    line-height: 20px;
+  }
+  
+  /* line 348, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table tbody tr {
+    background: #fff;
+    border-bottom: 10px solid #e9e9e9;
+  }
+  
+  /* line 352, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table tbody td div {
+    border-left: 1px solid #ddd;
+    margin: 10px 2px;
+    min-height: 60px;
+    padding: 4px 0 0 10px;
+    line-height: 1.4em;
+    display: -webkit-inline-box;
+    vertical-align: middle;
+    font-family: "OpenSans-Light", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+  }
+  
+  /* line 364, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos table tbody:before {
+    line-height: 1em;
+    content: "_";
+    color: transparent;
+    display: block;
+  }
+  
+  /* line 372, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos .Card {
+    padding: 15px 0 0 15px;
+  }
+  
+  /* line 376, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos .Card.Informativo {
+    padding: 15px 0 0 0;
+    height: 80px;
+  }
+  
+  /* line 381, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos .Card.Informativo .lateral p, .SinglePage .SistemasExternos .Card.Informativo .lateral h4 {
+    display: block;
+  }
+  
+  /* line 385, resources/sass/_layout-sitefilho.scss */
+  .SinglePage .SistemasExternos .Card.Informativo .principal {
+    margin: 0;
+    padding: 0 20px;
+    border-left: 1px solid #b2b2b2;
+    height: 52px;
+  }
+  
+  /* line 397, resources/sass/_layout-sitefilho.scss */
+  .site-filho.SinglePage .destacado {
+    display: inherit;
+    position: relative;
+    padding: 0 0 2px 14px;
+    border-left: 4px solid #00a84a;
+  }
+  
+  /* line 407, resources/sass/_layout-sitefilho.scss */
+  .site-filho.SinglePage .wrapper.container > div > p a {
+    color: #00a84a;
+  }
+  
+  /* line 411, resources/sass/_layout-sitefilho.scss */
+  .site-filho.SinglePage .wrapper.container > div > a {
+    color: #00a84a;
+  }
+  
+  /**
+   * Ajustes de responsivo na busca no site filho
+   */
+  
+  /**
+   *
+   */
+  
+  /* line 674, resources/sass/_layout-sitefilho.scss */
+  .BgVerdeGrad .ListaDecorada li a, .BgVerdeGrad2 .ListaDecorada li a, .BgVerdeGrad3 .ListaDecorada li a {
+    color: #fff !important;
+  }
+  @media (max-width: 767px) {
+    /* line 12, resources/sass/_header-sitefilho.scss */
+    .HeaderSlider .Slider .slick-dots {
+      height: 20px;
+      text-align: center;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #004f28;
+    }
+  }
+  @media (max-width: 1024px) {
+    /* line 24, resources/sass/_header-sitefilho.scss */
+    .HeaderPrincipal h1 img {
+      width: 100% !important;
+      display: inline-block;
+      height: auto !important;
+      margin-left: 20px !important;
+    }
+  }
+  @media only screen and (max-width: 959px) {
+    /* line 183, resources/sass/_layout-sitefilho.scss */
+    .site-filho .DiarioOficialCard .Card.Informativo .principal {
+      padding-left: 20px;
+    }
+  }
+  @media (max-width: 960px) {
+    /* line 202, resources/sass/_layout-sitefilho.scss */
+    .site-filho .DiarioOficialCard .principal {
+      padding-right: 70px;
+    }
+  }
+  @media (min-width: 960px) {
+    /* line 260, resources/sass/_layout-sitefilho.scss */
+    .site-filho .DiarioOficialCard .lateral + .principal {
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 1px solid #b2b2b2;
+      width: calc(80% - 80px);
+      float: right;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    /* line 426, resources/sass/_layout-sitefilho.scss */
+    .site-filho .HeaderPrincipal.tl-8 {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0px;
+    }
+    /* line 433, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 40px;
+      float: none;
+      clear: both;
+    }
+    /* line 441, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header {
+      top: 0px;
+    }
+    /* line 443, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header form {
+      clear: both;
+    }
+    /* line 446, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header input {
+      height: 42px;
+    }
+    /* line 449, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header input.btn {
+      top: -1px;
+    }
+  }
+  @media only screen and (min-width: 767px) and (max-width: 1024px) {
+    /* line 462, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 98.3%;
+    }
+    /* line 467, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r__item {
+      border-right: solid 1px #00a84a;
+      padding: 0px;
+      -webkit-box-flex: 30%;
+          -ms-flex: 30%;
+              flex: 30%;
+    }
+    /* line 471, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r__item:last-child {
+      border: none;
+    }
+    /* line 475, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r__link {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    /* line 477, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r__link::after {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 496, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r__item .menu-image-title {
+      right: 20px;
+      margin: auto;
+    }
+    /* line 501, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r__link {
+      padding-left: 30px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 960px) {
+    /* line 518, resources/sass/_layout-sitefilho.scss */
+    .site-filho .Busca--header .menu-acesso-r__item .menu-image-title {
+      right: 0px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    /* line 530, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca {
+      width: 100%;
+    }
+    /* line 534, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header form {
+      -webkit-box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+              box-shadow: 0px 5px 14px rgba(0, 0, 0, 0.6);
+    }
+    /* line 537, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header fieldset {
+      width: 100%;
+      position: relative;
+    }
+    /* line 541, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header input[type='text'] {
+      width: 100%;
+    }
+    /* line 544, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header input.btn {
+      top: 0px;
+      position: absolute;
+      right: 0px;
+    }
+    /* line 549, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header .menu-acesso-r {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      width: 80%;
+      margin: auto;
+    }
+    /* line 556, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header .menu-acesso-r__item {
+      -webkit-box-flex: 33.3333%;
+          -ms-flex: 33.3333%;
+              flex: 33.3333%;
+      padding-left: 0px !important;
+    }
+    /* line 559, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header .menu-acesso-r__item:first-child {
+      -webkit-box-flex: 33.3333%;
+          -ms-flex: 33.3333%;
+              flex: 33.3333%;
+    }
+    /* line 563, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header .menu-acesso-r__item img {
+      width: 20px;
+      height: 17px;
+      left: 17px;
+    }
+    /* line 571, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header .menu-acesso-r__link {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font: 1.1em "OpenSans-Semibold", Helvetica, Arial, sans-serif;
+    }
+    /* line 574, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header .menu-acesso-r__link span.menu-image-title {
+      margin: auto;
+      text-align: center;
+    }
+    /* line 578, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .Busca--header .menu-acesso-r__link::after {
+      top: 0px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    /* line 592, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r {
+      width: 100% !important;
+    }
+    /* line 595, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca span.menu-image-title {
+      font-size: 8px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    /* line 610, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__link {
+      display: block;
+    }
+    /* line 612, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__link::after {
+      height: 100%;
+    }
+    /* line 616, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__link img {
+      left: 0px !important;
+      margin: auto;
+      display: block;
+    }
+    /* line 621, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__link .menu-image-title {
+      display: block;
+      margin: auto;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    /* line 638, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__item {
+      border-right: solid 1px #00a84a;
+    }
+    /* line 640, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__item:last-child {
+      border-right: none;
+    }
+    /* line 644, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__link {
+      margin: auto;
+      width: 85px;
+    }
+    /* line 647, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r__link::after {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    /* line 662, resources/sass/_layout-sitefilho.scss */
+    .site-filho .tl-4--Busca .menu-acesso-r {
+      position: relative;
+      left: -12px;
+    }
+  }

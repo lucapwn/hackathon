@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<title>Quiz - Hackathon da Inteligência Cidadã</title>
+        <link rel="shortcut icon" href="./files/images/favicon.ico" type="image/x-png" />
+        <link rel="shortcut icon" href="./files/images/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="./files/images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" id="gtranslate-style-css" href="./files/css/main/gtranslate-style-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="hamburguer-menu-effect-css" href="./files/css/main/hamburguer-menu-effect-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="modestgrid_css-css" href="./files/css/main/modestgrid_css-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="header_css-css" href="./files/css/main/header_css-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="menumobile_css-css" href="./files/css/main/menumobile_css-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="base_css-css" href="./files/css/main/base_css-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="slick_css-css" href="./files/css/main/slick_css-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="fontawesome-css" href="./files/css/main/fontawesome-css.css" type="text/css" media="all"/>
+        <link rel="stylesheet" id="cc-bootstrap-wrapper-css" href="./files/css/main/cc-bootstrap-wrapper-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="custom_css-css" href="./files/css/main/custom_css-css.css" type="text/css" media="all" />
+        <link rel="stylesheet" id="ceara_select2_site_style-css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css?ver=5.5.6" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="./files/css/style.css">
+
+        <script type="text/javascript">
+            window._wpemojiSettings = {
+                baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/",
+                ext: ".png",
+                svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/",
+                svgExt: ".svg",
+                source: { wpemoji: "https:\/\/www.cge.ce.gov.br\/wp-includes\/js\/wp-emoji.js?ver=5.5.6", twemoji: "https:\/\/www.cge.ce.gov.br\/wp-includes\/js\/twemoji.js?ver=5.5.6" },
+            };
+
+            (function (window, document, settings) {
+                var src, ready, ii, tests;
+                var canvas = document.createElement("canvas");
+                var context = canvas.getContext && canvas.getContext("2d");
+
+                function emojiSetsRenderIdentically(set1, set2) {
+                    var stringFromCharCode = String.fromCharCode;
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+                    context.fillText(stringFromCharCode.apply(this, set1), 0, 0);
+                    var rendered1 = canvas.toDataURL();
+                    context.clearRect(0, 0, canvas.width, canvas.height);
+                    context.fillText(stringFromCharCode.apply(this, set2), 0, 0);
+                    var rendered2 = canvas.toDataURL();
+                    return rendered1 === rendered2;
+                }
+
+                function browserSupportsEmoji(type) {
+                    var isIdentical;
+
+                    if (!context || !context.fillText) {
+                        return false;
+                    }
+
+                    context.textBaseline = "top";
+                    context.font = "600 32px Arial";
+
+                    switch (type) {
+                        case "flag":
+                            isIdentical = emojiSetsRenderIdentically([0x1f3f3, 0xfe0f, 0x200d, 0x26a7, 0xfe0f], [0x1f3f3, 0xfe0f, 0x200b, 0x26a7, 0xfe0f]);
+
+                            if (isIdentical) {
+                                return false;
+                            }
+
+                            isIdentical = emojiSetsRenderIdentically([0xd83c, 0xddfa, 0xd83c, 0xddf3], [0xd83c, 0xddfa, 0x200b, 0xd83c, 0xddf3]);
+
+                            if (isIdentical) {
+                                return false;
+                            }
+
+                            isIdentical = emojiSetsRenderIdentically(
+                                [0xd83c, 0xdff4, 0xdb40, 0xdc67, 0xdb40, 0xdc62, 0xdb40, 0xdc65, 0xdb40, 0xdc6e, 0xdb40, 0xdc67, 0xdb40, 0xdc7f],
+                                [0xd83c, 0xdff4, 0x200b, 0xdb40, 0xdc67, 0x200b, 0xdb40, 0xdc62, 0x200b, 0xdb40, 0xdc65, 0x200b, 0xdb40, 0xdc6e, 0x200b, 0xdb40, 0xdc67, 0x200b, 0xdb40, 0xdc7f]
+                            );
+
+                            return !isIdentical;
+                        case "emoji":
+                            isIdentical = emojiSetsRenderIdentically([0xd83d, 0xdc68, 0x200d, 0xd83c, 0xdf7c], [0xd83d, 0xdc68, 0x200b, 0xd83c, 0xdf7c]);
+                            return !isIdentical;
+                    }
+
+                    return false;
+                }
+
+                function addScript(src) {
+                    var script = document.createElement("script");
+
+                    script.src = src;
+                    script.defer = script.type = "text/javascript";
+                    document.getElementsByTagName("head")[0].appendChild(script);
+                }
+
+                tests = Array("flag", "emoji");
+
+                settings.supports = {
+                    everything: true,
+                    everythingExceptFlag: true,
+                };
+
+                for (ii = 0; ii < tests.length; ii++) {
+                    settings.supports[tests[ii]] = browserSupportsEmoji(tests[ii]);
+                    settings.supports.everything = settings.supports.everything && settings.supports[tests[ii]];
+
+                    if ("flag" !== tests[ii]) {
+                        settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[tests[ii]];
+                    }
+                }
+
+                settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && !settings.supports.flag;
+                settings.DOMReady = false;
+
+                settings.readyCallback = function () {
+                    settings.DOMReady = true;
+                };
+
+                if (!settings.supports.everything) {
+                    ready = function () {
+                        settings.readyCallback();
+                    };
+
+                    if (document.addEventListener) {
+                        document.addEventListener("DOMContentLoaded", ready, false);
+                        window.addEventListener("load", ready, false);
+                    } else {
+                        window.attachEvent("onload", ready);
+                        document.attachEvent("onreadystatechange", function () {
+                            if ("complete" === document.readyState) {
+                                settings.readyCallback();
+                            }
+                        });
+                    }
+
+                    src = settings.source || {};
+
+                    if (src.concatemoji) {
+                        addScript(src.concatemoji);
+                    } else if (src.wpemoji && src.twemoji) {
+                        addScript(src.twemoji);
+                        addScript(src.wpemoji);
+                    }
+                }
+            })(window, document, window._wpemojiSettings);
+        </script>
+        <style type="text/css">
+            img.wp-smiley,
+            img.emoji {
+                display: inline !important;
+                border: none !important;
+                box-shadow: none !important;
+                height: 1em !important;
+                width: 1em !important;
+                margin: 0 0.07em !important;
+                vertical-align: -0.1em !important;
+                background: none !important;
+                padding: 0 !important;
+            }
+        </style>
+    </head>
+    <body data-rsssl="1" class="page-template-default page page-id-81847 site-filho SinglePage" data-ajaxurl="https://www.cge.ce.gov.br/wp-admin/admin-ajax.php">
+        <main role="main" id="main">
+            <noscript>
+                <p>
+                    Estimado usuário, identificamos que o seu navegador não conseguiu abrir todos os componentes necessários para o completo funcionamento do sistema. Recomentamos que atualize o seu navegador.
+                </p>
+            </noscript>
+            <div class="cc-bootstrap-wrapper">
+                <!-- Barra Corona Vírus -->
+                <div class="container-fluid" style="background: #ffbd00;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center py-2">
+                                <a class="hvr-grow small text-white" target="_blank" alt="CORONAVÍRUS-COVID-19" href="https://coronavirus.ceara.gov.br" title="coronavirus-covid-19">
+                                    <strong>CORONAVÍRUS</strong>: Clique e saiba o que fazer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cabeçalho -->
+                <div class="d-none d-sm-none d-md-block">
+                    <header class="cc-header">
+                        <div class="container-fluid">
+                            <div class="container">
+                                <div class="cc-topbar row d-flex align-items-center justify-content-between">
+                                    <div class="col-auto">
+                                        <div class="cc-related-sites-menu-container">
+                                            <ul id="menu-superior" class="cc-related-sites-menu-list list-unstyled list-inline mb-0">
+                                                <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom list-inline-item mr-0 menu-item-13">
+                                                    <a target="_blank" rel="noopener noreferrer" href="http://www.ceara.gov.br"><span>PORTAL DO GOVERNO</span></a>
+                                                </li>
+                                                <li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom list-inline-item mr-0 menu-item-14">
+                                                    <a target="_blank" rel="noopener noreferrer" href="http://intranet.cge.ce.gov.br/"><span>INTRANET</span></a>
+                                                </li>
+                                                <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom list-inline-item mr-0 menu-item-15">
+                                                    <a target="_blank" rel="noopener noreferrer" href="http://webmail.cge.ce.gov.br"><span>WEBMAIL</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col d-flex justify-content-between mt-1">
+                                        <!-- GTranslate -->
+                                        <div>
+                                            <!-- GTranslate: https://gtranslate.io/ -->
+                                            <a href="#" onclick="doGTranslate('pt|en');return false;" title="English" class="glink nturl notranslate">
+                                                <img src="./files/images/en.png" height="24" width="24" alt="English" />
+                                            </a>
+                                            <a href="#" onclick="doGTranslate('pt|fr');return false;" title="French" class="glink nturl notranslate">
+                                                <img src="./files/images/fr.png" height="24" width="24" alt="French" />
+                                            </a>
+                                            <a href="#" onclick="doGTranslate('pt|pt');return false;" title="Portuguese" class="glink nturl notranslate">
+                                                <img src="./files/images/pt-br.png" height="24" width="24" alt="Portuguese" />
+                                            </a>
+                                            <a href="#" onclick="doGTranslate('pt|es');return false;" title="Spanish" class="glink nturl notranslate">
+                                                <img src="./files/images/es.png" height="24" width="24" alt="Spanish" />
+                                            </a>
+                                            <style type="text/css">
+                                                #goog-gt-tt {
+                                                    display: none !important;
+                                                }
+                                                .goog-te-banner-frame {
+                                                    display: none !important;
+                                                }
+                                                .goog-te-menu-value:hover {
+                                                    text-decoration: none !important;
+                                                }
+                                                .goog-text-highlight {
+                                                    background-color: transparent !important;
+                                                    box-shadow: none !important;
+                                                }
+                                                body {
+                                                    top: 0 !important;
+                                                }
+                                                #google_translate_element2 {
+                                                    display: none !important;
+                                                }
+                                            </style>
+                                            <div id="google_translate_element2"></div>
+                                            <script type="text/javascript">
+                                                function googleTranslateElementInit2() {
+                                                    new google.translate.TranslateElement({ pageLanguage: "pt", autoDisplay: false }, "google_translate_element2");
+                                                }
+                                            </script>
+                                            <script type="text/javascript" src="./files/js/main/translate.js"></script>
+                                            <script type="text/javascript">
+                                                function GTranslateGetCurrentLang() {
+                                                    var keyValue = document["cookie"].match("(^|;) ?googtrans=([^;]*)(;|$)");
+                                                    return keyValue ? keyValue[2].split("/")[2] : null;
+                                                }
+                                                function GTranslateFireEvent(element, event) {
+                                                    try {
+                                                        if (document.createEventObject) {
+                                                            var evt = document.createEventObject();
+                                                            element.fireEvent("on" + event, evt);
+                                                        } else {
+                                                            var evt = document.createEvent("HTMLEvents");
+                                                            evt.initEvent(event, true, true);
+                                                            element.dispatchEvent(evt);
+                                                        }
+                                                    } catch (e) {}
+                                                }
+                                                function doGTranslate(lang_pair) {
+                                                    if (lang_pair.value) lang_pair = lang_pair.value;
+                                                    if (lang_pair == "") return;
+                                                    var lang = lang_pair.split("|")[1];
+                                                    if (GTranslateGetCurrentLang() == null && lang == lang_pair.split("|")[0]) return;
+                                                    var teCombo;
+                                                    var sel = document.getElementsByTagName("select");
+                                                    for (var i = 0; i < sel.length; i++)
+                                                        if (/goog-te-combo/.test(sel[i].className)) {
+                                                            teCombo = sel[i];
+                                                            break;
+                                                        }
+                                                    if (
+                                                        document.getElementById("google_translate_element2") == null ||
+                                                        document.getElementById("google_translate_element2").innerHTML.length == 0 ||
+                                                        teCombo.length == 0 ||
+                                                        teCombo.innerHTML.length == 0
+                                                    ) {
+                                                        setTimeout(function () {
+                                                            doGTranslate(lang_pair);
+                                                        }, 500);
+                                                    } else {
+                                                        teCombo.value = lang;
+                                                        GTranslateFireEvent(teCombo, "change");
+                                                        GTranslateFireEvent(teCombo, "change");
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                        <!-- Acessibilidade -->
+                                        <ul class="menu-accessibility d-flex m-0 p-0">
+                                            <li class="menu-accessibility__item">
+                                                <a href="#" class="menu-accessibility__link menu-accessibility__link--normal" title="Fonte tamanho normal">
+                                                    <img src="./files/images/font-normal-02.svg" alt="Fonte tamanho normal" class="menu-accessibility__img" width="24" height="24" />
+                                                </a>
+                                            </li>
+                                            <li class="menu-accessibility__item">
+                                                <a href="#" class="menu-accessibility__link menu-accessibility__link--decrease" title="Diminuir a fonte">
+                                                    <img src="./files/images/font-less-02.svg" alt="Dominuir a fonte" class="menu-accessibility__img" width="24" height="24" />
+                                                </a>
+                                            </li>
+                                            <li class="menu-accessibility__item">
+                                                <a href="#" class="menu-accessibility__link menu-accessibility__link--increase" title="Aumentar a fonte">
+                                                    <img src="./files/images/font-plus-02.svg" alt="Aumentar a fonte" class="menu-accessibility__img" width="24" height="24" />
+                                                </a>
+                                            </li>
+                                            <li class="menu-accessibility__item">
+                                                <a href="#" class="menu-accessibility__link menu-accessibility__link--contraste" title="Contraste da tela">
+                                                    <img src="./files/images/icon-contraste-02.svg" alt="Contraste da tela" class="menu-accessibility__img" width="24" height="24" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="cc-related-sites-menu-container">
+                                            <ul id="menu-sites-relacionados-topo-header" class="cc-related-sites-menu-list list-unstyled list-inline mb-0">
+                                                <li class="list-inline-item mr-0">
+                                                    <a target="_blank" href="https://cearatransparente.ce.gov.br/portal-da-transparencia/ouvidoria?locale=pt-BR"><span>OUVIDORIA ESTADUAL</span></a>
+                                                </li>
+                                                <li class="list-inline-item mr-0">
+                                                    <a target="_blank" href="https://cearatransparente.ce.gov.br/"><span>CEARÁ TRANSPARENTE</span></a>
+                                                </li>
+                                                <li class="list-inline-item mr-0">
+                                                    <a href="#"><span>ACESSO À INFORMAÇÃO</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid cc-bg-main-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col pt-3 pb-5">
+                                        <nav class="d-flex justify-content-between">
+                                            <a href="https://www.cge.ce.gov.br" class="d-block">
+                                                <img
+                                                    class="w-100 m-0 mt-2 cc-logo-internal"
+                                                    src="./files/images/Controladoria-e-Ouvidoria-Geral-do-Estado-INVERTIDA-WEB.svg"
+                                                    alt="Controladoria e Ouvidoria Geral do Estado- INVERTIDA &#8211; WEB"
+                                                />
+                                            </a>
+                                            <div class="d-flex">
+                                                <form action="https://www.cge.ce.gov.br" method="get" class="cc-search cc-search-internal d-flex align-items-center mx-3">
+                                                    <div class="input-group">
+                                                        <input
+                                                            type="text"
+                                                            class="form-control form-control-sm"
+                                                            name="s"
+                                                            placeholder="Do que você precisa?"
+                                                            aria-label="Ex: IPVA, Conta de Água, Hospitais, Notícias..."
+                                                            aria-describedby="button-search"
+                                                            value=""
+                                                        />
+                                                        <button class="btn btn-outline-secondary" type="submit" id="button-search">
+                                                            <img src="./files/images/busca-icon.png" alt="Ícone de busca" />
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                                <div class="cc-main-menu cc-main-menu-internal d-flex align-items-center">
+                                                    <ul id="menu-principal" class="d-flex align-items-center list-unstyled list-inline mb-0">
+                                                        <li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children list-inline-item mr-0 menu-item-9">
+                                                            <a href="#">Institucional</a>
+                                                            <ul class="sub-menu list-unstyled list-inline">
+                                                                <li id="menu-item-68076" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-68076">
+                                                                    <a href="https://www.cge.ce.gov.br/institucional/">Sobre</a>
+                                                                </li>
+                                                                <li id="menu-item-73381" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-73381">
+                                                                    <a href="https://www.cge.ce.gov.br/quem-e-quem/">Quem é Quem</a>
+                                                                </li>
+                                                                <li id="menu-item-67742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children list-inline-item mr-0 menu-item-67742">
+                                                                    <a href="https://www.cge.ce.gov.br/coordenadorias/">Coordenadorias</a>
+                                                                </li>
+                                                                <li id="menu-item-4899" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-4899">
+                                                                    <a href="https://www.cge.ce.gov.br/eventos-institucionais/">Eventos</a>
+                                                                </li>
+                                                                <li id="menu-item-68372" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-68372">
+                                                                    <a href="https://www.cge.ce.gov.br/qualidade/">Qualidade</a>
+                                                                </li>
+                                                                <li id="menu-item-75916" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-75916">
+                                                                    <a href="https://www.cge.ce.gov.br/ouvidoria-geral/">Ouvidoria Setorial</a>
+                                                                </li>
+                                                                <li id="menu-item-68700" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-68700">
+                                                                    <a href="https://www.cge.ce.gov.br/comissao-setorial-de-etica-publica/">Comissão Setorial de Ética Pública</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="menu-item-68217" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children list-inline-item mr-0 menu-item-68217">
+                                                            <a href="#">Serviços</a>
+                                                            <ul class="sub-menu list-unstyled list-inline">
+                                                                <li id="menu-item-69521" class="menu-item menu-item-type-custom menu-item-object-custom list-inline-item mr-0 menu-item-69521">
+                                                                    <a href="https://cearatransparente.ce.gov.br/portal-da-transparencia/ouvidoria?locale=pt-BR">Ouvidoria</a>
+                                                                </li>
+                                                                <li id="menu-item-69520" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-69520">
+                                                                    <a href="https://www.cge.ce.gov.br/acesso-a-informacao/">Acesso à Informação</a>
+                                                                </li>
+                                                                <li id="menu-item-69522" class="menu-item menu-item-type-custom menu-item-object-custom list-inline-item mr-0 menu-item-69522">
+                                                                    <a href="http://transparencia.ce.gov.br/">Transparência</a>
+                                                                </li>
+                                                                <li id="menu-item-69874" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-69874">
+                                                                    <a href="https://www.cge.ce.gov.br/e-parcerias/">e-Parcerias</a>
+                                                                </li>
+                                                                <li id="menu-item-69523" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-69523">
+                                                                    <a href="https://www.cge.ce.gov.br/controle-interno-preventivo/orientacao-tecnica-e-normativa/">Assessoria Técnica</a>
+                                                                </li>
+                                                                <li id="menu-item-68890" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-68890">
+                                                                    <a href="https://www.cge.ce.gov.br/legislacao/">Legislação</a>
+                                                                </li>
+                                                                <li id="menu-item-70909" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-70909">
+                                                                    <a href="https://www.cge.ce.gov.br/outros-servicos/">Outros Serviços</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li id="menu-item-5167" class="menu-item menu-item-type-post_type menu-item-object-page list-inline-item mr-0 menu-item-5167">
+                                                            <a href="https://www.cge.ce.gov.br/sistemas/">Sistemas</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <!-- Cabeçalho mobile -->
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none cc-mobile-menu" style="overflow: hidden;">
+                    <header class="cc-header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <nav class="navbar navbar-dark" role="navigation">
+                                        <button class="navbar-toggler collapsed px-0 py-1 border-0" type="button" data-toggle="collapse" data-target="#menu-mobile" aria-controls="menu-mobile" aria-expanded="false" aria-label="Menu">
+                                            <span class="icon-bar top-bar"></span>
+                                            <span class="icon-bar middle-bar"></span>
+                                            <span class="icon-bar bottom-bar"></span>
+                                        </button>
+                                        <div id="menu-mobile" class="collapse navbar-collapse mt-3">
+                                            <ul id="menu-principal-1" class="nav navbar-nav">
+                                                <li
+                                                    itemscope="itemscope"
+                                                    itemtype="https://www.schema.org/SiteNavigationElement"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-9 nav-item"
+                                                >
+                                                    <a title="Institucional" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-9">Institucional</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-9" role="menu">
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68076 nav-item">
+                                                            <a title="Sobre" href="https://www.cge.ce.gov.br/institucional/" class="dropdown-item">Sobre</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73381 nav-item">
+                                                            <a title="Quem é Quem" href="https://www.cge.ce.gov.br/quem-e-quem/" class="dropdown-item">Quem é Quem</a>
+                                                        </li>
+                                                        <li
+                                                            itemscope="itemscope"
+                                                            itemtype="https://www.schema.org/SiteNavigationElement"
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-67742 nav-item"
+                                                        >
+                                                            <a title="Coordenadorias" href="https://www.cge.ce.gov.br/coordenadorias/" class="dropdown-item">Coordenadorias</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4899 nav-item">
+                                                            <a title="Eventos" href="https://www.cge.ce.gov.br/eventos-institucionais/" class="dropdown-item">Eventos</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68372 nav-item">
+                                                            <a title="Qualidade" href="https://www.cge.ce.gov.br/qualidade/" class="dropdown-item">Qualidade</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75916 nav-item">
+                                                            <a title="Ouvidoria Setorial" href="https://www.cge.ce.gov.br/ouvidoria-geral/" class="dropdown-item">Ouvidoria Setorial</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68700 nav-item">
+                                                            <a title="Comissão Setorial de Ética Pública" href="https://www.cge.ce.gov.br/comissao-setorial-de-etica-publica/" class="dropdown-item">Comissão Setorial de Ética Pública</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    itemscope="itemscope"
+                                                    itemtype="https://www.schema.org/SiteNavigationElement"
+                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-68217 nav-item"
+                                                >
+                                                    <a title="Serviços" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-68217">Serviços</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-68217" role="menu">
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69521 nav-item">
+                                                            <a title="Ouvidoria" href="https://cearatransparente.ce.gov.br/portal-da-transparencia/ouvidoria?locale=pt-BR" class="dropdown-item">Ouvidoria</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69520 nav-item">
+                                                            <a title="Acesso à Informação" href="https://www.cge.ce.gov.br/acesso-a-informacao/" class="dropdown-item">Acesso à Informação</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-69522 nav-item">
+                                                            <a title="Transparência" href="http://transparencia.ce.gov.br/" class="dropdown-item">Transparência</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69874 nav-item">
+                                                            <a title="e-Parcerias" href="https://www.cge.ce.gov.br/e-parcerias/" class="dropdown-item">e-Parcerias</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69523 nav-item">
+                                                            <a title="Assessoria Técnica" href="https://www.cge.ce.gov.br/controle-interno-preventivo/orientacao-tecnica-e-normativa/" class="dropdown-item">Assessoria Técnica</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68890 nav-item">
+                                                            <a title="Legislação" href="https://www.cge.ce.gov.br/legislacao/" class="dropdown-item">Legislação</a>
+                                                        </li>
+                                                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70909 nav-item">
+                                                            <a title="Outros Serviços" href="https://www.cge.ce.gov.br/outros-servicos/" class="dropdown-item">Outros Serviços</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5167 nav-item">
+                                                    <a title="Sistemas" href="https://www.cge.ce.gov.br/sistemas/" class="nav-link">Sistemas</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="menu-mobile" class="collapse navbar-collapse">
+                                            <ul id="menu-superior-1" class="nav navbar-nav">
+                                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13 nav-item">
+                                                    <a title="PORTAL DO GOVERNO" target="_blank" href="http://www.ceara.gov.br" class="nav-link">PORTAL DO GOVERNO</a>
+                                                </li>
+                                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14 nav-item">
+                                                    <a title="INTRANET" target="_blank" href="http://intranet.cge.ce.gov.br/" class="nav-link">INTRANET</a>
+                                                </li>
+                                                <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15 nav-item">
+                                                    <a title="WEBMAIL" target="_blank" href="http://webmail.cge.ce.gov.br" class="nav-link">WEBMAIL</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <div class="col d-flex align-items-center justify-content-end">
+                                    <!-- GTranslate -->
+                                    <!-- GTranslate: https://gtranslate.io/ -->
+                                    <a href="#" onclick="doGTranslate('pt|en');return false;" title="English" class="glink nturl notranslate">
+                                        <img src="./files/images/en.png" height="24" width="24" alt="English" />
+                                    </a>
+                                    <a href="#" onclick="doGTranslate('pt|fr');return false;" title="French" class="glink nturl notranslate">
+                                        <img src="./files/images/fr.png" height="24" width="24" alt="French" />
+                                    </a>
+                                    <a href="#" onclick="doGTranslate('pt|pt');return false;" title="Portuguese" class="glink nturl notranslate">
+                                        <img src="./files/images/pt-br.png" height="24" width="24" alt="Portuguese" />
+                                    </a>
+                                    <a href="#" onclick="doGTranslate('pt|es');return false;" title="Spanish" class="glink nturl notranslate">
+                                        <img src="./files/images/es.png" height="24" width="24" alt="Spanish" />
+                                    </a>
+                                    <style type="text/css">
+                                        #goog-gt-tt {
+                                            display: none !important;
+                                        }
+                                        .goog-te-banner-frame {
+                                            display: none !important;
+                                        }
+                                        .goog-te-menu-value:hover {
+                                            text-decoration: none !important;
+                                        }
+                                        .goog-text-highlight {
+                                            background-color: transparent !important;
+                                            box-shadow: none !important;
+                                        }
+                                        body {
+                                            top: 0 !important;
+                                        }
+                                        #google_translate_element2 {
+                                            display: none !important;
+                                        }
+                                    </style>
+                                    <div id="google_translate_element2"></div>
+                                    <script type="text/javascript">
+                                        function googleTranslateElementInit2() {
+                                            new google.translate.TranslateElement({ pageLanguage: "pt", autoDisplay: false }, "google_translate_element2");
+                                        }
+                                    </script>
+                                    <script type="text/javascript">
+                                        function GTranslateGetCurrentLang() {
+                                            var keyValue = document["cookie"].match("(^|;) ?googtrans=([^;]*)(;|$)");
+                                            return keyValue ? keyValue[2].split("/")[2] : null;
+                                        }
+                                        function GTranslateFireEvent(element, event) {
+                                            try {
+                                                if (document.createEventObject) {
+                                                    var evt = document.createEventObject();
+                                                    element.fireEvent("on" + event, evt);
+                                                } else {
+                                                    var evt = document.createEvent("HTMLEvents");
+                                                    evt.initEvent(event, true, true);
+                                                    element.dispatchEvent(evt);
+                                                }
+                                            } catch (e) {}
+                                        }
+                                        function doGTranslate(lang_pair) {
+                                            if (lang_pair.value) lang_pair = lang_pair.value;
+                                            if (lang_pair == "") return;
+                                            var lang = lang_pair.split("|")[1];
+                                            if (GTranslateGetCurrentLang() == null && lang == lang_pair.split("|")[0]) return;
+                                            var teCombo;
+                                            var sel = document.getElementsByTagName("select");
+                                            for (var i = 0; i < sel.length; i++)
+                                                if (/goog-te-combo/.test(sel[i].className)) {
+                                                    teCombo = sel[i];
+                                                    break;
+                                                }
+                                            if (
+                                                document.getElementById("google_translate_element2") == null ||
+                                                document.getElementById("google_translate_element2").innerHTML.length == 0 ||
+                                                teCombo.length == 0 ||
+                                                teCombo.innerHTML.length == 0
+                                            ) {
+                                                setTimeout(function () {
+                                                    doGTranslate(lang_pair);
+                                                }, 500);
+                                            } else {
+                                                teCombo.value = lang;
+                                                GTranslateFireEvent(teCombo, "change");
+                                                GTranslateFireEvent(teCombo, "change");
+                                            }
+                                        }
+                                    </script>
+                                    <!-- Acessibilidade -->
+                                    <ul class="menu-accessibility d-flex m-0 p-0">
+                                        <li class="menu-accessibility__item">
+                                            <a href="#" class="menu-accessibility__link menu-accessibility__link--normal" title="Fonte tamanho normal">
+                                                <img src="./files/images/font-normal-02.svg" alt="Fonte tamanho normal" class="menu-accessibility__img" width="24" height="24" />
+                                            </a>
+                                        </li>
+                                        <li class="menu-accessibility__item">
+                                            <a href="#" class="menu-accessibility__link menu-accessibility__link--decrease" title="Diminuir a fonte">
+                                                <img src="./files/images/font-less-02.svg" alt="Dominuir a fonte" class="menu-accessibility__img" width="24" height="24" />
+                                            </a>
+                                        </li>
+                                        <li class="menu-accessibility__item">
+                                            <a href="#" class="menu-accessibility__link menu-accessibility__link--increase" title="Aumentar a fonte">
+                                                <img src="./files/images/font-plus-02.svg" alt="Aumentar a fonte" class="menu-accessibility__img" width="24" height="24" />
+                                            </a>
+                                        </li>
+                                        <li class="menu-accessibility__item">
+                                            <a href="#" class="menu-accessibility__link menu-accessibility__link--contraste" title="Contraste da tela">
+                                                <img src="./files/images/icon-contraste-02.svg" alt="Contraste da tela" class="menu-accessibility__img" width="24" height="24" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <!-- Logotipo institucional do Governo do Estado do Ceará -->
+                                    <div class="col p-0">
+                                        <div class="p-1">
+                                            <a href="https://www.cge.ce.gov.br" class="d-block w-100">
+                                                <img
+                                                    class="w-100 mt-0 mb-0"
+                                                    src="./files/images/Controladoria-e-Ouvidoria-Geral-do-Estado-INVERTIDA-WEB-BRANCA-MENORZINHA.png"
+                                                    alt="Controladoria e Ouvidoria Geral do Estado- INVERTIDA &#8211; WEB &#8211; BRANCA- MENORZINHA"
+                                                />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <section class="BgCinza2 turismo-type">
+                <div class="wrapper container">
+                    <div class="">
+                        <!-- 1200x328 -->
+                        <p><img loading="lazy" class="alignnone size-large wp-image-81848" src="./files/images/game-cut.gif" alt="GIF animado" width="1200"/></p>
+                        <h1 class="quiz-title">Quiz - Hackathon da Inteligência Cidadã</h1>
+                        <p>&nbsp;</p>
+                        <div class="Card Informativo BgBranco row">
+                            <h4 class="-laranja"><strong>O que é?</strong></h4>
+                            <p class="main-text">
+                                O Quiz - Hackathon da Inteligência Cidadã é um jogo de questionários que tem como objetivo fazer uma avaliação dos seus conhecimentos sobre os 
+                                dados disponibilizados no <a class="link" href="https://cearatransparente.ce.gov.br/" target="__blank">Ceará Transparente</a>. 
+                                Enquanto as respostas certas são selecionadas, os pontos referentes às questões são acumulados, e os vencedores são os que atingem o maior 
+                                número de pontos.
+                            </p>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div class="Card Informativo BgBranco row">
+                            <h4 class="-laranja"><strong>Como jogar?</strong></h4>
+                            <p class="main-text">
+                                O Quiz - Hackathon da Inteligência Cidadã possui três níveis de dificuldade: fácil, médio e difícil. Após o usuário selecionar o nível de dificuldade, 
+                                serão exibidas perguntas referentes às informações de <a class="link" href="https://drive.google.com/drive/folders/16C2LUz_UntMubCPeeq-tVsEIRwrKUpCw" target="__blank">servidores públicos</a> 
+                                do ano de 2020 (de janeiro à dezembro) de acordo com o nível selecionado, ou seja, quanto maior o nível de dificuldade, mais questões serão exibidas.
+                                Para jogar, basta apenas clicar no botão "Jogar Agora", logo abaixo.
+                            </p>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div class="Card Informativo BgBranco row">
+                            <h4 class="-laranja"><strong>Pontuação</strong></h4>
+                            <p class="main-text">
+                                No nível fácil, são exibidas 10 questões ao total, onde cada questão vale 12 pontos.
+                                No nível médio, são exibidas 15 questões ao total, onde cada questão vale 8 pontos.
+                                No nível difícil, são exibidas 20 questões ao total, onde cada questão vale 6 pontos.
+                                Portanto, a pontuação máxima é de 120 pontos ao total.
+                            </p>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div class="Card Informativo BgBranco row">
+                            <h4 class="-laranja"><strong>Repositório</strong></h4>
+                            <p class="main-text">
+                                O protótipo encontra-se disponível publicamente no GitHub, no seguinte endereço: <a class="link" href="https://github.com/lucapwn/quiz-hackathon" target="__blank">https://github.com/lucapwn/quiz-hackathon</a>.
+                            </p>
+                        </div>
+                        <p>&nbsp;</p>
+                        <a id="jogar" class="btn btn-jogar" href="./menu/index.html">Jogar agora<i class="fas fa-gamepad"></i></a>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="AcessoRapido">
+            <div class="wrapper">
+                <div class="row">
+                    <h4>Acesso Rápido</h4>
+                    <nav class="MenuAcessos">
+                        <div class="acesso-rapido">
+                            <ul id="menu-acesso-rapido-footer" class="menu">
+                                <li id="menu-item-870" class="portal menu-item menu-item-type-custom menu-item-object-custom menu-item-870">
+                                    <a href="https://cearatransparente.ce.gov.br" target="_blank">
+                                        <i class="PortalTransparencia"></i>Ceará<br />
+                                        Transparente
+                                    </a>
+                                </li>
+                                <li id="menu-item-871" class="acesso menu-item menu-item-type-custom menu-item-object-custom menu-item-871">
+                                    <a href="http://cartadeservicos.ce.gov.br/" target="_blank">
+                                        <i class="AcessoCidadao"></i>Carta de Serviços<br />
+                                        do Cidadão
+                                    </a>
+                                </li>
+                                <li id="menu-item-872" class="lei menu-item menu-item-type-custom menu-item-object-custom menu-item-872">
+                                    <a href="https://cearatransparente.ce.gov.br/portal-da-transparencia/acesso-a-informacao?locale=pt-BR" target="_blank">
+                                        <i class="AcessoInformacao"></i>Lei geral de<br />
+                                        acesso à informação
+                                    </a>
+                                </li>
+                                <li id="menu-item-873" class="diario menu-item menu-item-type-custom menu-item-object-custom menu-item-873">
+                                    <a href="http://pesquisa.doe.seplag.ce.gov.br/" target="_blank">
+                                        <i class="DiarioOficial"></i>Diário<br />
+                                        Oficial
+                                    </a>
+                                </li>
+                                <li id="menu-item-874" class="legislacao menu-item menu-item-type-custom menu-item-object-custom menu-item-874">
+                                    <a href="https://www.al.ce.gov.br/" target="_blank">
+                                        <i class="Legislacao"></i>Legislação<br />
+                                        Estadual
+                                    </a>
+                                </li>
+                                <li id="menu-item-61919" class="acoes menu-item menu-item-type-post_type menu-item-object-page menu-item-61919">
+                                    <a href="http://www.ceara.gov.br/governo/">
+                                        <i class="AcoesGoverno"></i>Ações de<br />
+                                        Governo
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="row Infos" style="border-top: none;">
+                    <div class="dt-2 NomeSite">
+                        <a class="link-gov" href="http://WWW.CGE.CE.GOV.BR">
+                            <h2>CGE.CE.GOV.BR</h2>
+                        </a>
+                    </div>
+                    <div class="dt-10 Direitos">
+                        <div>
+                            <div class="textwidget">
+                                <div class="box">
+                                    <h2>Sede da Controladoria e Ouvidoria Geral do Estado</h2>
+                                    <p>
+                                        Av. Gal Afonso Albuquerque Lima <br />
+                                        Edifício SEPLAG - 2ºAndar <br />
+                                        Cambeba - Fortaleza, CE<br />
+                                        Telefone: 3101 3471<br />
+                                        CEP: 60.822-325
+                                    </p>
+                                </div>
+                                <div class="box">
+                                    <h2>Horário de Atendimento</h2>
+                                    <p>08 às 17 horas</p>
+                                </div>
+                                <div class="box">
+                                    <h2 class="canais">Nossos canais</h2>
+                                    <div class="redes">
+                                        <ul class="menu">
+                                            <li class="facebook redesLinkRodape">
+                                                <a href="https://www.facebook.com/cgeceara/" style="overflow: hidden;" target="_blank">Facebook</a>
+                                            </li>
+                                            <li class="instagram redesLinkRodape">
+                                                <a href="https://www.instagram.com/cgeceara/" style="overflow: hidden;" target="_blank">Instagram</a>
+                                            </li>
+                                            <li class="twitter redesLinkRodape">
+                                                <a href="https://twitter.com/cgeceara" style="overflow: hidden;" target="_blank">Twitter</a>
+                                            </li>
+                                            <li class="youtube redesLinkRodape">
+                                                <a href="https://www.youtube.com/channel/UCzBrWrD7mb0rK5O9zLVOZjA" style="overflow: hidden;" target="_blank">Youtube</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="box copyright">
+                                    <p>
+                                        © 2017 - 2021 – governo do estado do ceará<br />
+                                        todos os direitos reservados
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="Overlay"></div>
+        <script type="text/javascript" src="./files/js/main/jquery.js" id="jquery-js"></script>
+        <script type="text/javascript" id="contact-form-7-js-extra">
+            var wpcf7 = { apiSettings: { root: "https:\/\/www.cge.ce.gov.br\/wp-json\/contact-form-7\/v1", namespace: "contact-form-7\/v1" }, cached: "1" };
+        </script>
+        <script type="text/javascript" src="./files/js/main/scripts.js" id="contact-form-7-js"></script>
+        <script type="text/javascript" src="./files/js/main/bootstrap.js" id="cc-bootstrap-js"></script>
+        <script type="text/javascript" src="./files/js/main/jquery.js" id="main-js"></script>
+        <script type="text/javascript" src="https://www.cge.ce.gov.br/wp-content/plugins/conta-clique/contador.php?post-id=81847&#038;ver=1628" id="contaclique-js"></script>
+        <script type="text/javascript" id="solr_post_functions_js-js-extra">
+            var solrInformation = {
+                solrPath: "http:\/\/www.ceara.gov.br\/solr\/ceara",
+                parameterSearch: "",
+                postsPerPage: "10",
+                order: "0",
+                stopwords: ["do", "da", "de", "dos", "das", "um", "uma", "uns", "umas", "por", "para", "pelo", "pela"],
+            };
+        </script>
+        <script type="text/javascript" src="./files/js/main/functions.js" id="solr_post_functions_js-js"></script>
+        <script type="text/javascript" id="thickbox-js-extra">
+            var thickboxL10n = {
+                next: "Pr\u00f3ximo \u00bb",
+                prev: "\u00ab Anterior",
+                image: "Imagem",
+                of: "de",
+                close: "Fechar",
+                noiframes: "Este recurso necessita frames em linha. Os iframes est\u00e3o desativados por voc\u00ea ou seu navegador n\u00e3o os suporta.",
+                loadingAnimation: "https:\/\/www.cge.ce.gov.br\/wp-includes\/js\/thickbox\/loadingAnimation.gif",
+            };
+        </script>
+        <script type="text/javascript" src="./files/js/main/thickbox.js" id="thickbox-js"></script>
+        <script type="text/javascript" src="./files/js/main/keyboard.js" id="keyboard_js-js"></script>
+        <script type="text/javascript" src="./files/js/main/keyboard-extension.js" id="keyboard_extension_js-js"></script>
+        <script type="text/javascript" src="./files/js/main/slick.js" id="slick_js-js"></script>
+        <script type="text/javascript" src="./files/js/main/popper.js" id="popper-js"></script>
+        <script type="text/javascript" src="./files/js/main/tippy.js" id="tippy-js"></script>
+        <script type="text/javascript" src="./files/js/main/scripts2.js" id="scripts_js-js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js?ver=5.5.6" id="ceara_select2_site_script-js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/i18n/pt-BR.js?ver=5.5.6" id="ceara_select2_pt_site_script-js"></script>
+        <script type="text/javascript" src="./files/js/main/embed.js" id="wp-embed-js"></script>
+    </body>
+</html>
