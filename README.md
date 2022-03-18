@@ -2,4 +2,4 @@
 
 Protótipo do Quiz - Hackathon da Inteligência Cidadã
 
-O modelo encontra-se disponível em [http://rwxteam.tech/quiz](https://rwxteam.tech/quiz).
+O modelo encontra-se disponível em [https://rwxteam.tech/quiz](http://rwxteam.tech/quiz).
