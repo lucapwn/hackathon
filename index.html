@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-		<title>Quiz - Hackathon da Inteligência Cidadã</title>
+        <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <title>Quiz - Hackathon da Inteligência Cidadã</title>
         <link rel="shortcut icon" href="./files/images/favicon.ico" type="image/x-png" />
         <link rel="shortcut icon" href="./files/images/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="./files/images/favicon.ico" type="image/x-icon" />
@@ -15,12 +15,12 @@
         <link rel="stylesheet" id="menumobile_css-css" href="./files/css/main/menumobile_css-css.css" type="text/css" media="all" />
         <link rel="stylesheet" id="base_css-css" href="./files/css/main/base_css-css.css" type="text/css" media="all" />
         <link rel="stylesheet" id="slick_css-css" href="./files/css/main/slick_css-css.css" type="text/css" media="all" />
-        <link rel="stylesheet" id="fontawesome-css" href="./files/css/main/fontawesome-css.css" type="text/css" media="all"/>
+        <link rel="stylesheet" id="fontawesome-css" href="./files/css/main/fontawesome-css.css" type="text/css" media="all" />
         <link rel="stylesheet" id="cc-bootstrap-wrapper-css" href="./files/css/main/cc-bootstrap-wrapper-css.css" type="text/css" media="all" />
         <link rel="stylesheet" id="custom_css-css" href="./files/css/main/custom_css-css.css" type="text/css" media="all" />
         <link rel="stylesheet" id="ceara_select2_site_style-css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css?ver=5.5.6" type="text/css" media="all" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="./files/css/style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./files/css/style.css" />
 
         <script type="text/javascript">
             window._wpemojiSettings = {
@@ -32,7 +32,7 @@
             };
 
             (function (window, document, settings) {
-                var src, ready, ii, tests;
+                var src, ready, i, tests;
                 var canvas = document.createElement("canvas");
                 var context = canvas.getContext && canvas.getContext("2d");
 
@@ -100,12 +100,12 @@
                     everythingExceptFlag: true,
                 };
 
-                for (ii = 0; ii < tests.length; ii++) {
-                    settings.supports[tests[ii]] = browserSupportsEmoji(tests[ii]);
-                    settings.supports.everything = settings.supports.everything && settings.supports[tests[ii]];
+                for (i = 0; i < tests.length; i++) {
+                    settings.supports[tests[i]] = browserSupportsEmoji(tests[i]);
+                    settings.supports.everything = settings.supports.everything && settings.supports[tests[i]];
 
-                    if ("flag" !== tests[ii]) {
-                        settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[tests[ii]];
+                    if ("flag" !== tests[i]) {
+                        settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[tests[i]];
                     }
                 }
 
@@ -166,8 +166,8 @@
                     Estimado usuário, identificamos que o seu navegador não conseguiu abrir todos os componentes necessários para o completo funcionamento do sistema. Recomentamos que atualize o seu navegador.
                 </p>
             </noscript>
+
             <div class="cc-bootstrap-wrapper">
-                <!-- Barra Corona Vírus -->
                 <div class="container-fluid" style="background: #ffbd00;">
                     <div class="container">
                         <div class="row">
@@ -179,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Cabeçalho -->
+
                 <div class="d-none d-sm-none d-md-block">
                     <header class="cc-header">
                         <div class="container-fluid">
@@ -200,10 +200,9 @@
                                             </ul>
                                         </div>
                                     </div>
+
                                     <div class="col d-flex justify-content-between mt-1">
-                                        <!-- GTranslate -->
                                         <div>
-                                            <!-- GTranslate: https://gtranslate.io/ -->
                                             <a href="#" onclick="doGTranslate('pt|en');return false;" title="English" class="glink nturl notranslate">
                                                 <img src="./files/images/en.png" height="24" width="24" alt="English" />
                                             </a>
@@ -216,6 +215,7 @@
                                             <a href="#" onclick="doGTranslate('pt|es');return false;" title="Spanish" class="glink nturl notranslate">
                                                 <img src="./files/images/es.png" height="24" width="24" alt="Spanish" />
                                             </a>
+
                                             <style type="text/css">
                                                 #goog-gt-tt {
                                                     display: none !important;
@@ -237,7 +237,9 @@
                                                     display: none !important;
                                                 }
                                             </style>
+
                                             <div id="google_translate_element2"></div>
+                                            
                                             <script type="text/javascript">
                                                 function googleTranslateElementInit2() {
                                                     new google.translate.TranslateElement({ pageLanguage: "pt", autoDisplay: false }, "google_translate_element2");
@@ -249,6 +251,7 @@
                                                     var keyValue = document["cookie"].match("(^|;) ?googtrans=([^;]*)(;|$)");
                                                     return keyValue ? keyValue[2].split("/")[2] : null;
                                                 }
+
                                                 function GTranslateFireEvent(element, event) {
                                                     try {
                                                         if (document.createEventObject) {
@@ -261,6 +264,7 @@
                                                         }
                                                     } catch (e) {}
                                                 }
+                                                
                                                 function doGTranslate(lang_pair) {
                                                     if (lang_pair.value) lang_pair = lang_pair.value;
                                                     if (lang_pair == "") return;
@@ -290,7 +294,6 @@
                                                 }
                                             </script>
                                         </div>
-                                        <!-- Acessibilidade -->
                                         <ul class="menu-accessibility d-flex m-0 p-0">
                                             <li class="menu-accessibility__item">
                                                 <a href="#" class="menu-accessibility__link menu-accessibility__link--normal" title="Fonte tamanho normal">
@@ -426,7 +429,6 @@
                         </div>
                     </header>
                 </div>
-                <!-- Cabeçalho mobile -->
                 <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none cc-mobile-menu" style="overflow: hidden;">
                     <header class="cc-header">
                         <div class="container-fluid">
@@ -525,8 +527,6 @@
                                     </nav>
                                 </div>
                                 <div class="col d-flex align-items-center justify-content-end">
-                                    <!-- GTranslate -->
-                                    <!-- GTranslate: https://gtranslate.io/ -->
                                     <a href="#" onclick="doGTranslate('pt|en');return false;" title="English" class="glink nturl notranslate">
                                         <img src="./files/images/en.png" height="24" width="24" alt="English" />
                                     </a>
@@ -611,7 +611,6 @@
                                             }
                                         }
                                     </script>
-                                    <!-- Acessibilidade -->
                                     <ul class="menu-accessibility d-flex m-0 p-0">
                                         <li class="menu-accessibility__item">
                                             <a href="#" class="menu-accessibility__link menu-accessibility__link--normal" title="Fonte tamanho normal">
@@ -638,7 +637,6 @@
                             </div>
                             <div class="container">
                                 <div class="row">
-                                    <!-- Logotipo institucional do Governo do Estado do Ceará -->
                                     <div class="col p-0">
                                         <div class="p-1">
                                             <a href="https://www.cge.ce.gov.br" class="d-block w-100">
@@ -658,52 +656,47 @@
             </div>
             <section class="BgCinza2 turismo-type">
                 <div class="wrapper container">
-                    <div class="">
-                        <!-- 1200x328 -->
-                        <p><img loading="lazy" class="alignnone size-large wp-image-81848" src="./files/images/game-cut.gif" alt="GIF animado" width="1200"/></p>
-                        <h1 class="quiz-title">Quiz - Hackathon da Inteligência Cidadã</h1>
-                        <p>&nbsp;</p>
-                        <div class="Card Informativo BgBranco row">
-                            <h4 class="-laranja"><strong>O que é?</strong></h4>
-                            <p class="main-text">
-                                O Quiz - Hackathon da Inteligência Cidadã é um jogo de questionários que tem como objetivo fazer uma avaliação dos seus conhecimentos sobre os 
-                                dados disponibilizados no <a class="link" href="https://cearatransparente.ce.gov.br/" target="__blank">Ceará Transparente</a>. 
-                                Enquanto as respostas certas são selecionadas, os pontos referentes às questões são acumulados, e os vencedores são os que atingem o maior 
-                                número de pontos.
-                            </p>
-                        </div>
-                        <p>&nbsp;</p>
-                        <div class="Card Informativo BgBranco row">
-                            <h4 class="-laranja"><strong>Como jogar?</strong></h4>
-                            <p class="main-text">
-                                O Quiz - Hackathon da Inteligência Cidadã possui três níveis de dificuldade: fácil, médio e difícil. Após o usuário selecionar o nível de dificuldade, 
-                                serão exibidas perguntas referentes às informações de <a class="link" href="https://drive.google.com/drive/folders/16C2LUz_UntMubCPeeq-tVsEIRwrKUpCw" target="__blank">servidores públicos</a> 
-                                do ano de 2020 (de janeiro à dezembro) de acordo com o nível selecionado, ou seja, quanto maior o nível de dificuldade, mais questões serão exibidas.
-                                Para jogar, basta apenas clicar no botão "Jogar Agora", logo abaixo.
-                            </p>
-                        </div>
-                        <p>&nbsp;</p>
-                        <div class="Card Informativo BgBranco row">
-                            <h4 class="-laranja"><strong>Pontuação</strong></h4>
-                            <p class="main-text">
-                                No nível fácil, são exibidas 10 questões ao total, onde cada questão vale 12 pontos.
-                                No nível médio, são exibidas 15 questões ao total, onde cada questão vale 8 pontos.
-                                No nível difícil, são exibidas 20 questões ao total, onde cada questão vale 6 pontos.
-                                Portanto, a pontuação máxima é de 120 pontos ao total.
-                            </p>
-                        </div>
-                        <p>&nbsp;</p>
-                        <div class="Card Informativo BgBranco row">
-                            <h4 class="-laranja"><strong>Repositório</strong></h4>
-                            <p class="main-text">
-                                O protótipo encontra-se disponível publicamente no GitHub, no seguinte endereço: <a class="link" href="https://github.com/lucapwn/quiz-hackathon" target="__blank">https://github.com/lucapwn/quiz-hackathon</a>.
-                            </p>
-                        </div>
-                        <p>&nbsp;</p>
-                        <a id="jogar" class="btn btn-jogar" href="./menu/index.html">Jogar agora<i class="fas fa-gamepad"></i></a>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
+                    <p><img loading="lazy" class="alignnone size-large wp-image-81848" src="./files/images/game-cut.gif" alt="GIF animado" width="1200" /></p>
+                    <h1 class="quiz-title">Quiz - Hackathon da Inteligência Cidadã</h1>
+                    <p>&nbsp;</p>
+                    <div class="Card Informativo BgBranco row">
+                        <h4 class="-laranja"><strong>O que é?</strong></h4>
+                        <p class="main-text">
+                            O Quiz - Hackathon da Inteligência Cidadã é um jogo de questionários que tem como objetivo fazer uma avaliação dos seus conhecimentos sobre os dados disponibilizados no
+                            <a class="link" href="https://cearatransparente.ce.gov.br/" target="__blank">Ceará Transparente</a>. Enquanto as respostas certas são selecionadas, os pontos referentes às questões são acumulados, e os
+                            vencedores são os que atingem o maior número de pontos.
+                        </p>
                     </div>
+                    <p>&nbsp;</p>
+                    <div class="Card Informativo BgBranco row">
+                        <h4 class="-laranja"><strong>Como jogar?</strong></h4>
+                        <p class="main-text">
+                            O Quiz - Hackathon da Inteligência Cidadã possui três níveis de dificuldade: fácil, médio e difícil. Após o usuário selecionar o nível de dificuldade, serão exibidas perguntas referentes às informações de
+                            <a class="link" href="https://drive.google.com/drive/folders/16C2LUz_UntMubCPeeq-tVsEIRwrKUpCw" target="__blank">servidores públicos</a>
+                            do ano de 2020 (de janeiro à dezembro) de acordo com o nível selecionado, ou seja, quanto maior o nível de dificuldade, mais questões serão exibidas. Para jogar, basta apenas clicar no botão "Jogar Agora",
+                            logo abaixo.
+                        </p>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="Card Informativo BgBranco row">
+                        <h4 class="-laranja"><strong>Pontuação</strong></h4>
+                        <p class="main-text">
+                            No nível fácil, são exibidas 10 questões ao total, onde cada questão vale 12 pontos. No nível médio, são exibidas 15 questões ao total, onde cada questão vale 8 pontos. No nível difícil, são exibidas 20
+                            questões ao total, onde cada questão vale 6 pontos. Portanto, a pontuação máxima é de 120 pontos ao total.
+                        </p>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="Card Informativo BgBranco row">
+                        <h4 class="-laranja"><strong>Repositório</strong></h4>
+                        <p class="main-text">
+                            O protótipo encontra-se disponível publicamente no GitHub, no seguinte endereço:
+                            <a class="link" href="https://github.com/lucapwn/hackathon" target="__blank">https://github.com/lucapwn/hackathon</a>.
+                        </p>
+                    </div>
+                    <p>&nbsp;</p>
+                    <a id="jogar" class="btn btn-jogar" href="./menu/index.html">Jogar agora<i class="fas fa-gamepad"></i></a>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
                 </div>
             </section>
         </main>
