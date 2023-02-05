@@ -1,5 +1,3 @@
-
-
 # Citizen Intelligence Hackathon
 
 This project is a quiz game about employee data provided by the State of Ceará, Brazil.
@@ -51,10 +49,10 @@ If you are hosting it on a server, just copy the files to the destination folder
 
 The images below illustrate the game running in the browser.
 
-![](https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPaJHRMolPNWtrorVnWef7AyRGXVdJkyyN6akznQoYZZWpeSinxtjzZPFRmy4P2vqZjxBIwyp23jnzKbLn3z4xV-kU=w1920-h947)
-![](https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPpB8FEwfI0wEmgL1UixzvIU7jaxCkQCsTtvZHnBoPlqBqJHRU63gNtzvnBb5UGmPc-Z_7cbnm3rQX49fiwA4g7C5BR=w1920-h947)
-![](https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPOhCM59pL45WOEcgUqPkgtkYDmd5DBUH8kHSseJ1hd6wBt5yWbq7xYYQ5VTU__pj7-1Ymq3WXHN5fFdF6hvDqyXczycw=w1920-h947)
-![](https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gOTmNHZs81Tv1L0C9PufycuDfwNdSbCiWwS1IAEp7ilwUu_AmMoa8yPrT17N1XyhB-JFIqwJNf0YEM_IF-AWhnl9HSS=w1920-h947)
+![](https://user-images.githubusercontent.com/58787069/216812615-44050ce1-e070-4b47-a002-320cddebf60d.PNG)
+![](https://user-images.githubusercontent.com/58787069/216812621-ab6ee8a1-18e9-4b9b-9969-c60f697ab6d9.PNG)
+![](https://user-images.githubusercontent.com/58787069/216812624-ef8dc799-a4ca-4462-a936-1fb9ba41cfa2.PNG)
+![](https://user-images.githubusercontent.com/58787069/216812627-32589391-4e61-420c-8a04-66ec159c0456.PNG)
 
 ## Author
 
